@@ -24,4 +24,4 @@ def data():
         return render_template('data.html', form_data=form_data, y_pred=y_pred)
 
 if __name__ == '__main__':
-    app.run(port=5010)
+    app.run(host='0.0.0.0')
