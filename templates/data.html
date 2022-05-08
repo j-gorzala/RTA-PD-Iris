@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlaskApp</title>
+    <style>
+        a {
+            color: #0c20d5;
+            font-size: 3em;
+            margin-left: 50px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+        <a href="/">FlaskApp - Iris</a>
+        <br><br>
+        <div class="content">
+                {% for key,value in form_data.items() %}
+                <h2> {{key}}</h2>
+                <p> {{value}}</p>
+                {% endfor %}
+        </div>
+        <div class="specie">
+            <h2>Iris species</h2>
+            <p>{{y_pred}}</p>
+        </div>
+
+</body>
+</html>
